@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Selamat Datang</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="audio.css">
+</head>
+<body class="welcome-page">
+  <!-- Sapaan Romantis -->
+  <div class="greeting">
+    <h1>Hai Sayang 💗</h1>
+    <p>Selamat datang di website kita cantikku 💗<br>
+       Kamu bisa buka apa aja di sini 💗</p>
+    <div class="heart">❤️</div>
+  </div>
+
+  <!-- Section Horizontal: Kiri - Tengah - Kanan -->
+  <div class="section-row">
+    <div class="card kenalan" onclick="window.location.href='kenalan.html'">
+      <h2>Awal Kenalan 💌</h2>
+      <p>Cerita pertama kali kita bertemu</p>
+    </div>
+
+    <div class="card pacaran" onclick="window.location.href='pacaran.html'">
+      <h2>Awal Pacaran 💘</h2>
+      <p>Momen kita resmi jadi pasangan</p>
+    </div>
+
+    <div class="card perjalanan" onclick="window.location.href='perjalanan.html'">
+      <h2>Perjalanan Kami 🌈</h2>
+      <p>Kisah indah selama hubungan kita</p>
+    </div>
+  </div>
+
+  <!-- Musik Latar -->
+  <audio id="bg-music" autoplay loop>
+    <source src="audio/music.mp3" type="audio/mp3">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <!-- Kontrol Musik -->
+  <div class="audio-controls">
+    <button id="playPauseBtn">🎵</button>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="1">
+  </div>
+
+  <!-- Script Tambahan -->
+  <script src="images.js"></script>
+  <script src="audio.js"></script>
+</body>
+</html>
